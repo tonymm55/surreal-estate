@@ -1,19 +1,22 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "../styles/app.css";
 import NavBar from "./NavBar";
+import Properties from "./Properties";
+import AddProperty from "./AddProperty";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <NavBar />
-      <header className="App-header">
+      <Routes>
+        <Route path="/" element={Properties} />
+        <Route path="/" element={AddProperty} />
+      </Routes>
+      <header className="app-header">
         <h2>Surreal Estate</h2>
       </header>
-      <Routes>
-        {/* <Route path="/" element={} />
-        <Route path="/" element={} /> */}
-      </Routes>
     </div>
   );
 };
