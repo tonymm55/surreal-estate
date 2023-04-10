@@ -1,16 +1,21 @@
-import '../styles/app.css';
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import "../styles/app.css";
+import NavBar from "./NavBar";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <NavBar />
       <header className="App-header">
-        {/* <img src= className="" alt="" /> */}
-        <h2>
-          Surreal Estate
-        </h2>
+        <h2>Surreal Estate</h2>
       </header>
+      <Routes>
+        {/* <Route path="/" element={} />
+        <Route path="/" element={} /> */}
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
