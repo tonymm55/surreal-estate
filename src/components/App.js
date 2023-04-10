@@ -12,7 +12,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={Properties} />
-        <Route path="/" element={AddProperty} />
+        <Route path="add-property" element={AddProperty} />
       </Routes>
       <header className="app-header">
         <h2>Surreal Estate</h2>
