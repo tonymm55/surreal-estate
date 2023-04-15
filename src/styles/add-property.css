@@ -1,8 +1,9 @@
 .add-property {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh
+  height: 50vh
 }
 
 form {
