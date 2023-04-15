@@ -1,5 +1,5 @@
 import React from "react";
 
-const Properties = () => <>Properties Page</>;
+const Properties = () => <>TBC Properties Component</>;
 
 export default Properties;
