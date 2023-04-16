@@ -18,6 +18,8 @@ form {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
   margin-top: 1px;
   background-color: green;
+  font-size: 35px;
+  color: aqua;
 }
 
 label {
@@ -43,10 +45,10 @@ select {
 button[type="submit"] {
   background-color: #0077cc;
   color: #fff;
-  padding: 10px 20px;
+  padding: 12px 22px;
   border-radius: 5px;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 20px;
   cursor: pointer;
   border: none;
 }

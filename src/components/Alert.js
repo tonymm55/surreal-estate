@@ -1,7 +1,6 @@
 import React from "react";
 
 const Alert = ({ message, success }) => {
-  console.log(message);
   if (!message) return null;
 
   return (

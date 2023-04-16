@@ -1,17 +1,19 @@
 .alert {
-padding: 10px;
-border-radius: 5px;
-font-size: 10px;
-font-weight: bold;
-border: 1px solid black !important
-}
-
-.alert-error {
-background-color: #ffcccc;
-color: #cc0000;
-}
-
-.alert-success {
-background-color: #ccffcc;
-color: #008000;
-}
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 10px;
+  }
+  
+.alert.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+.alert.alert-error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+    font-size: 25px;
+  }

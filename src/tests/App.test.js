@@ -1,8 +1,22 @@
-import { render, screen } from '@testing-library/react';
-import App from '../components/App';
+import { render, screen } from "@testing-library/react";
+import { MemoryRouter } from "react-router-dom";
+import React from "react";
+import App from "../components/App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/Surreal Estate/i);
-  expect(linkElement).toBeInTheDocument();
+describe("App", () => {
+  it("renders page content", () => {
+    render(
+      <MemoryRouter>
+        <App />
+      </MemoryRouter>
+    );
+
+    const headerElement = screen.getByText(/Surreal Estate/i);
+    const addPropertyLink = screen.getByText(/Add Property/i);
+    const viewPropertiesLink = screen.getByText(/View Properties/i);
+
+    expect(headerElement).toBeInTheDocument();
+    expect(addPropertyLink).toBeInTheDocument();
+    expect(viewPropertiesLink).toBeInTheDocument();
+  });
 });
