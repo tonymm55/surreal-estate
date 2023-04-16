@@ -5,21 +5,21 @@ import Alert from "../../components/Alert";
 describe("Alert Component", () => {
   test("displays an error message", () => {
     const errorMessage = "This is an error message";
-    const { getByText } = render(<Alert message={errorMessage} type="error" />);
+    const { getByText } = render(<Alert message={errorMessage} type="error" />); // message & type prop
     expect(getByText(/This is an error message/).textContent).toBe(
       errorMessage
     );
   });
 
-  xit("displays a success message", () => {
+  it("displays a success message", () => {
     const successMessage = "This is a success message";
-    const { getByText } = render(
-      <Alert message={successMessage} type="success" />
+    const { getByText } = render(<Alert message={successMessage} type="success" />); // message & type prop
+    expect(getByText(/This is a success message/).textContent).toBe(
+      successMessage
     );
-    expect(getByText(successMessage)).toBeInTheDocument();
   });
 
-  xit("displays a warning message", () => {
+  it("displays a warning message", () => {
     const warningMessage = "This is a warning message";
     const { getByText } = render(
       <Alert message={warningMessage} type="warning" />
