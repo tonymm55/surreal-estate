@@ -17,9 +17,9 @@ form {
   border-radius: 0px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
   margin-top: 1px;
-  background-color: green;
-  font-size: 35px;
-  color: aqua;
+  background-color: lightseagreen;
+  /* font-size: 35px;
+  color: darkgreen; */
 }
 
 label {

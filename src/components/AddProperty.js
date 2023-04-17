@@ -30,10 +30,10 @@ const AddProperty = () => {
     setAlert({ message: "", isSuccess: false });
     try {
       axios
-        .post("http://localhost:3000/api/v1/PropertyListing", fields)
+        .post("http://localhost:4000/api/v1/PropertyListing", fields)
         .then(() =>
           setAlert({
-            message: "Property Added",
+            message: "Property Added Successfully",
             isSuccess: true,
           })
         )

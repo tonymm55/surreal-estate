@@ -14,9 +14,7 @@ const App = () => {
         <Route path="/" element={<Properties />} />
         <Route path="add-property" element={<AddProperty />} />
       </Routes>
-      <header className="app-header">
-        <h2>Surreal Estate</h2>
-      </header>
+      <header className="app-header" />
     </div>
   );
 };
