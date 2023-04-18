@@ -1,19 +1,20 @@
 .alert {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    font-size: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  font-size: 10px;
   }
   
 .alert.alert-success {
-    background-color: #d4edda;
-    border-color: black;
-    color: red;
+  background-color: #d4edda;
+  border: 2px solid green;
+  color: green;
+  font-size: 25px;
   }
   
 .alert.alert-error {
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    color: #721c24;
-    font-size: 25px;
+  background-color: lightpink;
+  border: 5px solid red;
+  color: red;
+  font-size: 25px;
   }

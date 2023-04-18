@@ -40,7 +40,7 @@ const AddProperty = () => {
         .catch((error) => {
           console.log(error);
           setAlert({
-            message: "Server error. Please try again!!!",
+            message: "Server error. Please try again!",
             isSuccess: false,
           });
         });
