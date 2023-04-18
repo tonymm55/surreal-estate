@@ -9,7 +9,9 @@ import AddProperty from "./AddProperty";
 const App = () => {
   return (
     <div className="app">
-      <NavBar />
+      <nav role="navigation">
+        <NavBar />
+      </nav>
       <Routes>
         <Route path="/" element={<Properties />} />
         <Route path="add-property" element={<AddProperty />} />

@@ -1,3 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Alert Component displays a success message 1`] = `
+<DocumentFragment>
+  <div
+    class="alert alert-error"
+  >
+    This is a success message
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert Component displays an error message 1`] = `
+<DocumentFragment>
+  <div
+    class="alert alert-error"
+  >
+    This is an error message
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Alert Component displays warning message 1`] = `
+<DocumentFragment>
+  <div
+    class="alert alert-error"
+  >
+    Warning, No message!
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Alert Component does not render an error or a success message if message props is empty 1`] = `<DocumentFragment />`;

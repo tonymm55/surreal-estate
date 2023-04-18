@@ -10,12 +10,11 @@ describe("App", () => {
         <App />
       </MemoryRouter>
     );
-
-    const headerElement = screen.getByText(/Surreal Estate/i);
+    const navBar = screen.getByRole("navigation");
     const addPropertyLink = screen.getByText(/Add Property/i);
     const viewPropertiesLink = screen.getByText(/View Properties/i);
 
-    expect(headerElement).toBeInTheDocument();
+    expect(navBar).toBeInTheDocument();
     expect(addPropertyLink).toBeInTheDocument();
     expect(viewPropertiesLink).toBeInTheDocument();
   });
