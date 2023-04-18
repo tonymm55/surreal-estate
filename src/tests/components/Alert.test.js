@@ -21,11 +21,17 @@ describe("Alert Component", () => {
     );
   });
 
-  it("displays no message", () => {
-    const warningMessage = "No message!";
+  it("displays warning message", () => {
+    const warningMessage = "Warning, No message!";
     const { getByText } = render(
       <Alert message={warningMessage} type="warning" />
     ); // message & type prop
     expect(getByText(/No message!/).textContent).toBe(warningMessage);
+  });
+
+  it("does not render an error or a success message if message props is empty", () => {
+    const { asFragment } = render(<Alert message="" />);
+    const alert = asFragment();
+    expect(alert).toMatchSnapshot();
   });
 });
