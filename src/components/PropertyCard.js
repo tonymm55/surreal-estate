@@ -15,10 +15,12 @@ const PropertyCard = ({
       <p>
         {type}-{city}
       </p>
-      <p>{bathrooms}</p>
       <p>{bedrooms}</p>
+      <p>{bathrooms}</p>
       <p>{`Price: £${price}`}</p>
-      <button type="submit">{email}</button>
+      <a href="mailto:someone@example.com">
+        <button type="submit">{email}</button>
+      </a>
     </div>
   );
 };

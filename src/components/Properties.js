@@ -8,9 +8,9 @@ const Properties = () => {
       type: "Flat",
       bathrooms: 2,
       bedrooms: 2,
-      price: 1000,
+      price: 10000,
       city: "Leeds",
-      email: "john.doe@example.com",
+      email: "tony.911@gmail.com",
     },
     // more properties
   ];
