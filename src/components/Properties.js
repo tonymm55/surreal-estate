@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import PropertyCard from "./PropertyCard";
+import Alert from "./Alert";
 
 const Properties = () => {
-  const properties = [
-    {
-      title: "2 bedroom flat in central Leeds",
-      type: "Flat",
-      bathrooms: 2,
-      bedrooms: 2,
-      price: 10000,
-      city: "Leeds",
-      email: "tony.911@gmail.com",
-    },
-    // more properties
-  ];
+  const [properties, setProperties] = useState([]);
+  const [alert, setAlert] = useState({ message: "" });
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:4000/api/v1/PropertyListing")
+      .then((response) => {
+        const { data } = response;
+        setProperties(data);
+      })
+      .catch(() => {
+        setAlert({ message: "Error getting properties." });
+      });
+  }, []);
 
   return (
     <div className="properties">
       {properties.map((property) => (
-        <PropertyCard key={property.title} {...property} />
+        <div key={property._id} className="item">
+          <PropertyCard {...property} />
+        </div>
       ))}
+      ;
     </div>
   );
 };

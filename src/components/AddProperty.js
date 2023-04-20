@@ -8,13 +8,13 @@ const AddProperty = () => {
 
   const initialState = {
     fields: {
-      title: "2 bed flat",
-      type: "Flat",
-      bedrooms: "2",
+      title: "3 Bed House",
+      type: "House",
+      bedrooms: "3",
       bathrooms: "1",
-      price: "1000",
+      price: "500000",
       city: "Manchester",
-      email: "joe@mcr.codes",
+      email: "someone@gmail.com",
     },
     alert: {
       message: "",
@@ -128,6 +128,16 @@ const AddProperty = () => {
             type="number"
             placeholder="e.g. 1000"
             value={fields.price}
+            onChange={handleFieldChange}
+          />
+        </label>
+        <label htmlFor="email">
+          Email
+          <input
+            id="email"
+            name="email"
+            placeholder="boaty@mcboatface.com"
+            value={fields.email}
             onChange={handleFieldChange}
           />
         </label>
