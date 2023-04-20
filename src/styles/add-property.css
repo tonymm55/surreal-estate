@@ -42,7 +42,7 @@ select {
   margin-top: 3px;
 }
 
-button[type="submit"] {
+.add-button[type="submit"] {
   background-color: #0077cc;
   color: #fff;
   padding: 12px 22px;
@@ -51,6 +51,7 @@ button[type="submit"] {
   margin-top: 20px;
   cursor: pointer;
   border: none;
+  width: 50%;
 }
 
 button[type="submit"]:hover {

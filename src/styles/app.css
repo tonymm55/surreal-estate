@@ -11,13 +11,3 @@ body {
   background-color: lightgray;
 }
 
-.properties {
-  padding: 0.5rem;
-}
-
-.properties > .item {
-  display: inline-block;
-  width: 33.33%;
-  padding: 0.5rem;
-  box-sizing: border-box;
-}

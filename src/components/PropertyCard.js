@@ -1,13 +1,10 @@
 import React from "react";
-// import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBath, faBed, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const bathElement = <FontAwesomeIcon icon={faBath} />;
 const bedElement = <FontAwesomeIcon icon={faBed} />;
 const envelopeElement = <FontAwesomeIcon icon={faEnvelope} />;
-
-// ReactDOM.render(element, document.body);
 
 const PropertyCard = ({
   title,
@@ -20,6 +17,9 @@ const PropertyCard = ({
 }) => {
   return (
     <div className="property-card">
+      <div className="card-logo">
+        <img src="/public/25694.png" alt="logo" />
+      </div>
       <h3>{title}</h3>
       <p>
         {type}-{city}
@@ -32,7 +32,7 @@ const PropertyCard = ({
       </p>
       <p>{`Price: £${price}`}</p>
       <a href="mailto:someone@example.com">
-        <button type="submit">
+        <button className="email-button" type="submit">
           {envelopeElement} {email}
         </button>
       </a>

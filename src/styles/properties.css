@@ -1,0 +1,22 @@
+.properties {
+    padding: 0.5rem;
+}
+  
+.properties > .item {
+display: inline-block;
+width: 33.33%;
+padding: 0.5rem;
+box-sizing: border-box;
+}
+
+.email-button {
+background-color: #0077cc;
+color: #fff;
+padding: 12px 22px;
+border-radius: 5px;
+font-size: 20px;
+margin-top: 20px;
+cursor: pointer;
+border: none;
+width: 100%;
+}

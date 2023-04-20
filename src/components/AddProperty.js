@@ -141,7 +141,9 @@ const AddProperty = () => {
             onChange={handleFieldChange}
           />
         </label>
-        <button type="submit">Add Property</button>
+        <button className="add-button" type="submit">
+          Add Property
+        </button>
       </form>
     </div>
   );
