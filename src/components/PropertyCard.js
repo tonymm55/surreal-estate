@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBath, faBed, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import surreallogocard from "../images/surreallogocard.png";
 
 const bathElement = <FontAwesomeIcon icon={faBath} />;
 const bedElement = <FontAwesomeIcon icon={faBed} />;
@@ -18,7 +19,11 @@ const PropertyCard = ({
   return (
     <div className="property-card">
       <div className="card-logo">
-        <img src="/public/25694.png" alt="logo" />
+        <img
+          className="property-card-logo"
+          src={surreallogocard}
+          alt="surreal-estate-logo"
+        />
       </div>
       <h3>{title}</h3>
       <p>
@@ -31,7 +36,7 @@ const PropertyCard = ({
         {bedElement} {bedrooms}
       </p>
       <p>{`Price: £${price}`}</p>
-      <a href="mailto:someone@example.com">
+      <a href={`mailto:${email}`}>
         <button className="email-button" type="submit">
           {envelopeElement} {email}
         </button>

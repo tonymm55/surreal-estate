@@ -14,7 +14,7 @@ const AddProperty = () => {
       bathrooms: "1",
       price: "500000",
       city: "Manchester",
-      email: "someone@gmail.com",
+      email: "initialState@gmail.com",
     },
     alert: {
       message: "",
