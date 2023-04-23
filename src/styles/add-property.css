@@ -16,7 +16,7 @@ form {
   border: 0px solid #ccc;
   border-radius: 0px;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
-  margin-top: 1px;
+  margin-top: 100px;
   background-color: lightseagreen;
   /* font-size: 35px;
   color: darkgreen; */
@@ -24,7 +24,7 @@ form {
 
 label {
   display: flex;
-  padding: 5px;
+  padding: 15px;
   flex-direction: column;
   margin-bottom: 10px;
   font-weight: bold;
