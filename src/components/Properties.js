@@ -28,7 +28,7 @@ const Properties = () => {
   };
 
   return (
-    <div className="wrapper">
+    <div className="container">
       <div className="sidebar-filter">
         <SideBar handleFilterByCity={handleFilterByCity} />
       </div>
