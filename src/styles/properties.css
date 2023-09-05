@@ -4,6 +4,7 @@
     /* padding: 0.5rem; */
 }
 
+/* This section needs fixing. There is a class named sidebar too */
 .sidebar-filter {
     flex: 0 0 15%;
     /* list-style: none; */
