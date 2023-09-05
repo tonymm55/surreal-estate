@@ -1,14 +1,35 @@
-.properties {
-    padding: 0.5rem;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 0.5rem; */
 }
-  
-.properties > .item {
-    display: inline-block;
-    width: 33.33%;
-    padding: 2rem;
+
+.sidebar-filter {
+    flex: 0 0 15%;
+    /* list-style: none; */
+    /* font-size: 25px; */
+    /* text-decoration: none; */
     box-sizing: border-box;
-    padding: 10px;
+    padding: 1rem;
+  }
+
+.properties {
+    flex: 0 0 85%; /* Property cards take up 75% of the width */
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.item {
+    flex: 0 0 calc(20% - 2rem); /* Each property card takes up 33.33% with margin */
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 0.5rem; /* Add margin between columns */
+    margin-bottom: 0.5rem; /* Add margin at the bottom of property cards */
+  }
+
+.item:last-child {
+    margin-right: 0; /* Remove margin from the last property card in each row */
+  }
 
 .email-button {
     background-color: darkblue;
@@ -24,15 +45,9 @@
     align-self: auto;
 }
 
-.side-bar ul {
-    list-style: none;
-    font-size: 25px;
-    text-decoration: none;
-  }
-
-.property-card-logo {
+/* .property-card-logo {
     width: 100%;
-}
+} */
 
 .property-card {
     background-color: lightseagreen;
@@ -40,5 +55,6 @@
 
 .property-card p,h3{
  padding-left: 1rem;
- font-size: 20px;
+ font-size: 1em;
+ 
 }
