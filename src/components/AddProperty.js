@@ -4,7 +4,7 @@ import "../styles/add-property.css";
 import Alert from "./Alert";
 
 const AddProperty = () => {
-  console.log("AddProperty component rendered"); // Added console log here
+  // console.log("AddProperty component rendered");
 
   const initialState = {
     fields: {

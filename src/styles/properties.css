@@ -7,12 +7,16 @@
 /* This section needs fixing. There is a class named sidebar too */
 .sidebar-filter {
     flex: 0 0 15%;
-    /* list-style: none; */
+    list-style: none;
     /* font-size: 25px; */
-    /* text-decoration: none; */
+    text-decoration: none;
     box-sizing: border-box;
     padding: 1rem;
   }
+
+.side-bar ul {
+  list-style-type: none;
+}
 
 .properties {
     flex: 0 0 85%; /* Property cards take up 75% of the width */
